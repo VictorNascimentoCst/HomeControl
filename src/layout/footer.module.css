@@ -1,0 +1,19 @@
+.footer_container {
+    background-color: rgb(94, 178, 234);
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.footer_container p {
+    font-weight: bold;
+}
+.footerImg_container img {
+    height: 30px;
+    margin-left: 15px;
+    transition: ease-in-out 0.3s;
+}
+.footerImg_container img:hover {
+    height: 40px;
+}

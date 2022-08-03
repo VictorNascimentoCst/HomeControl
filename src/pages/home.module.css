@@ -1,0 +1,9 @@
+.img_backgound {
+    opacity: 0.4;
+    height: auto;
+}
+.home_container{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
