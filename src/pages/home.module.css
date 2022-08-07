@@ -1,9 +1,11 @@
-.img_backgound {
-    opacity: 0.4;
-    height: auto;
-}
+
 .home_container{
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)100%), url(../img/backhome.jpg);
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    height: 730px;
+   
 }
+
+

@@ -12,7 +12,7 @@
 .footerImg_container img {
     height: 30px;
     margin-left: 15px;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
 }
 .footerImg_container img:hover {
     height: 40px;
