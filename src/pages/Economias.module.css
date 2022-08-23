@@ -1,11 +1,12 @@
-
-.economias_container{
-    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)100%), url(../img/economias.webp);
+.economias_containerPrincipal {
+    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)100%), url(../img/economias.png);
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    height: 730px;
-    background-size:contain;
-   
+    height:80vh;
+}
+.economias_container{
+   color: red;
 }
 

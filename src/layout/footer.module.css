@@ -1,6 +1,6 @@
 .footer_container {
     background-color: rgb(94, 178, 234);
-    height: 65px;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;

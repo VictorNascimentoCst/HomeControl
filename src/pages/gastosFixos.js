@@ -1,4 +1,4 @@
-import gastosfixos from '../img/gastofixo.webp'
+
 import style from '../pages/gastosFixos.module.css'
 
 function GastosFixos() {

@@ -1,8 +1,8 @@
 .container_gastosFixos{
-    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)100%), url(../img/gastofixo.webp);
+    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)100%), url(../img/gastofixo.png);
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    height: 730px;
-    background-size:contain;
+    height:80vh;
 }
