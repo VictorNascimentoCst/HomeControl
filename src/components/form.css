@@ -16,20 +16,6 @@
     max-width: 270px;
 
 }
-
-.button_inputs {
-    background-color: #ffb803c8;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 20px;
-    transition: ease-in 0.3s;
-}
-.button_inputs:hover{
-    color: #023047;
-    background-color:#fb8500;
-}
-
 .container_inputs input {
     padding: 5px;
     margin-bottom: 10px;

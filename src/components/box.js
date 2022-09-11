@@ -10,12 +10,12 @@ function Box({nome, custo}) {
   
         <div className='box'>
                     <h2>{nome}</h2>
-                    <p>{custo}</p>
+                    <p>R$: {custo}</p>
                     <div className='icons'>
                         <IconContext.Provider value={{ className: "shared-class", size: 30 }}>
                             <>
-                                <BiEditAlt />
-                                <AiOutlineDelete />
+                                <BiEditAlt className='icon'/>
+                                <AiOutlineDelete  className='icon'/>
                             </>
                         </IconContext.Provider>
                     </div>

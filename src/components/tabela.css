@@ -1,0 +1,16 @@
+.container_list table{
+    background-color: #8ecae6;
+    border-radius: 10px;
+    text-align: center;   
+}
+
+.container_list table, td {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.container_list td {
+    padding: 0px 30px;
+}
+.list_title {
+    font-weight: bolder;
+}

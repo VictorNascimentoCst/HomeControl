@@ -1,35 +1,24 @@
 import './boxesGastos.css'
 import Box from './box';
 import React from 'react';
+import Total from './total';
 
 
 
-function BoxesGastos() {
-    const gastos = [{
-        nome: ' NETFLIX',
-        custo: 30.00
-    }, {
-        nome: ' NETFLIX',
-        custo: 30.00
-    }, {
-        nome: ' NETFLIX',
-        custo: 30.00
-    }]
+function BoxesGastos({gastos}) {
  
-
     return (
         <div className='Maincontainer_boxes'>
 
             <div id='teste' className='container_boxes'>
-              
-                {gastos.map((element) => {
-                   return <Box nome={element.nome} custo={`R$: ${element.custo}`}/>
-  
-                })}
+           
+            {Array.from(gastos).map((element) => {
+                return <Box key={element.name} nome={element.name} custo={element.cost}/>
+            })}
+        
             
             </div>
-
-            <h2 className='totalGasto'>TOTAL:</h2>
+            <Total/>
 
         </div>
     )

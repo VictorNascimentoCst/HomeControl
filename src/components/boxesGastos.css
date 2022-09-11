@@ -2,10 +2,12 @@
     background-color: #8ecae6;
     border-radius: 10px;
     box-shadow: 10px 10px 10px #86868671;
-    margin-top: 3%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    min-height: 45%;
 }
 .totalGasto {
     text-align: center;
