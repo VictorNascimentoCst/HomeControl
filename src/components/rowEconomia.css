@@ -1,0 +1,12 @@
+.row_economia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    min-width: 450px;
+}
+.row_economia p {
+    background-color: bisque;
+    border-radius: 15px;
+    text-align: center;
+}
+

@@ -5,15 +5,15 @@ import Input from "./input";
 
 
 function Form({addGastos}) {
-    
+
     const [gasto, setGasto] = useState({})
 
     const pegarValue = (e) => {
         setGasto({...gasto, [e.target.name]: e.target.value})
     }
-    const falar = (e) => {
+    const sendGastos = (e) => {
         e.preventDefault()
-        addGastos(gasto)
+        addGastos(gasto)      
     }
 
 
@@ -21,10 +21,10 @@ function Form({addGastos}) {
 
         <div className="main_container">
 
-            <form onSubmit={falar} className="container_inputs">
+            <form onSubmit={sendGastos} className="container_inputs">
                 <div>
-                    <Input funcao={pegarValue} txtLabel={'Nome: '} name={'name'} />
-                    <Input funcao={pegarValue} txtLabel={'Custo: '} name={'cost'} />
+                    <Input placeholder={'Nome do gasto'} funcao={pegarValue} type={'text'} txtLabel={'Nome: '} name={'name'} />
+                    <Input placeholder={'Valor do gasto'} funcao={pegarValue} type={'number'} txtLabel={'Custo: '} name={'cost'} />
                 </div>
 
                 <Button text={'Cadastrar'}></Button>

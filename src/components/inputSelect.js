@@ -1,9 +1,9 @@
 
-function InputSelect() {
+function InputSelect({funcao}) {
     return (
         <div>
-            <label for="meses">Mês: </label>
-            <select id="meses" name="meses">
+            <label htmlFor="mes">Mês: </label>
+            <select onChange={funcao} id="mes" name="mes">
                 <option value="JANEIRO">JANEIRO</option>
                 <option value="FEVEREIRO">FEVEREIRO</option>
                 <option value="MARÇO">MARÇO</option>

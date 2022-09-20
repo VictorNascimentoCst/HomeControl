@@ -1,3 +1,4 @@
+
 import './boxesGastos.css'
 import Box from './box';
 import React from 'react';
@@ -5,20 +6,23 @@ import Total from './total';
 
 
 
-function BoxesGastos({gastos}) {
- 
+function BoxesGastos({gastos, valor}) {
+    
     return (
         <div className='Maincontainer_boxes'>
 
             <div id='teste' className='container_boxes'>
-           
-            {Array.from(gastos).map((element) => {
-                return <Box key={element.name} nome={element.name} custo={element.cost}/>
+       
+          
+            {Array.from(gastos).map((e, index)=> {
+                
+               return <Box gasto={e.name} custo={e.cost} key={index} />
             })}
+          
         
-            
             </div>
-            <Total/>
+           
+            <Total valor={valor} />
 
         </div>
     )

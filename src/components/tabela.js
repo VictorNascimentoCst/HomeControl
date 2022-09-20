@@ -1,7 +1,7 @@
 import './tabela.css'
 
 
-function Tabela({texto1, texto2, texto3}) {
+function Tabela({texto1, texto2, texto3, bloco1, bloco2}) {
 
     return (
         <div className="container_list">
@@ -16,6 +16,10 @@ function Tabela({texto1, texto2, texto3}) {
             </thead>
 
             <tbody id="tbody_table">
+                <tr>
+                    <td>{bloco1}</td>
+                    <td>{bloco2}</td>
+                </tr>
                
             </tbody>
         </table>

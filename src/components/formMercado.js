@@ -1,46 +1,34 @@
+import { useState } from "react"
 import Button from "./button"
 import "./formMercado.css"
 import Input from './input'
 
 
-function FormMercado() {
+function FormMercado({addListaMercado}) {
 
-    function addTR() {
-        const limparInput = () => {
-            console.log('oi')
-            document.getElementById('name').value = ''
-            document.getElementById('quantidade').value = ''
-        }
+    const [lista, setLista] = useState([])
 
-        var tbody = document.getElementById('tbody_table')
-        var tr = document.createElement('tr')
-        tbody.append(tr)
-        var radioButton = document.createElement("input")
-        radioButton.setAttribute("type", 'checkbox')
-        tr.append(radioButton)
-        var bloco1 = document.createElement('td')
-        bloco1.textContent = document.getElementById('name').value
-        var bloco2 = document.createElement('td')
-        bloco2.textContent = document.getElementById('quantidade').value
-        tr.append(bloco1)
-        tr.append(bloco2)
-        limparInput()
+    const pegarValue= (e) => {
+        setLista({...lista, [e.target.name] : e.target.value})
+    }
 
-
+    const mandarLista = (e) => {
+        e.preventDefault()
+        addListaMercado(lista)
     }
 
     return (
 
         <div className="main_container">
 
-            <div className="container_inputs">
-            <Input txtLabel={'Produto: '}/>
-            <Input txtLabel={'Quantidade: '}/>
-                <Button addTR={addTR} text={'Cadastrar'} />
+            <form onSubmit={mandarLista} className="container_inputs">
+                <Input funcao={pegarValue} type={'text'} name={'produto'} placeholder={'Nome do produto'} txtLabel={'Produto: '} />
+                <Input funcao={pegarValue} type={'number'} name={'quantidade'} placeholder={'Quantidade'} txtLabel={'Quantidade: '} />
+                <Button text={'Cadastrar'} />
 
-            </div>
+            </form >
 
-        
+
 
         </div>
 

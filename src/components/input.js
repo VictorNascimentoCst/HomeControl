@@ -1,9 +1,9 @@
-
-function Input({txtLabel, funcao, name}) {
+import './input.css'
+function Input({txtLabel, funcao, name, type, placeholder}) {
     return (
-        <div>
+        <div className='container'>
             <label htmlFor="name">{txtLabel}</label>
-            <input onChange={funcao} type='text' name={name} id="name" placeholder="Nome do gasto aqui !"></input>
+            <input onChange={funcao} type={type} name={name} id="name" placeholder={placeholder}></input>
         </div>
     )
 }

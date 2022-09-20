@@ -1,17 +1,25 @@
 import FormMercado from '../components/formMercado';
+import { useState } from 'react';
 import style from '../pages/ListaMercado.module.css'
 import './ListaMercado.module.css'
-import Tabela from '../components/tabela';
-import Total from '../components/total';
+import ContainerList from '../components/containerList'
 
 
 function ListaMercado() {
+ 
+    const [ListaMercado, setListaMercado] = useState([])
+
+    const addListaMercado = (lista) => {
+        setListaMercado([...ListaMercado, lista])
+    }
+
     return (
         <div className={style.ListaMercado}>
             <h1>Lista Mercado</h1>
-            <FormMercado />
-            <Tabela texto1={'Status'} texto2={'Produto'} texto3={'Quantidadee'} />
-            <Total />
+            <FormMercado addListaMercado={addListaMercado}/>
+            
+            <ContainerList ListaMercado={ListaMercado} texto1={'STATUS'} texto2={'PRODUTO'} texto3={'QUANTIDADE'}/>
+            
         </div>
     )
 }

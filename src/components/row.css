@@ -1,0 +1,28 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    min-width: 450px;
+}
+.row p {
+    background-color: bisque;
+    border-radius: 15px;
+    text-align: center;
+}
+.row .status{ 
+    background-color: rgb(82, 215, 98);
+    cursor: pointer;
+}
+.status_p {
+    cursor: pointer;
+}
+
+.row input {
+   margin-top: 8px;
+   text-align: center;
+}
+.form_lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

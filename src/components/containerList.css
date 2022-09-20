@@ -1,0 +1,16 @@
+
+.container_list {
+    display: flex;
+    flex-direction: column;
+    background-color: #8ecae6;
+    min-width: 40%;
+    box-shadow: 10px 10px 10px #86868671;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+.titles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 2px dotted black;
+    text-align: center;
+}
