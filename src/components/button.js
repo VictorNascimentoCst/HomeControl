@@ -1,9 +1,7 @@
-import { Link } from 'react-router-dom';
-import BoxesGastos from './boxesGastos';
 
 import './button.css'
 
-function Button({text, addTR}) {
+function Button({text}) {
 
     return (
         <button className='button'>{text}</button>
