@@ -4,6 +4,7 @@ function InputSelect({funcao}) {
         <div>
             <label htmlFor="mes">Mês: </label>
             <select onChange={funcao} id="mes" name="mes">
+                <option value="null">-----------------</option>
                 <option value="JANEIRO">JANEIRO</option>
                 <option value="FEVEREIRO">FEVEREIRO</option>
                 <option value="MARÇO">MARÇO</option>

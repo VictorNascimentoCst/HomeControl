@@ -1,15 +1,18 @@
 import './list.css'
+import { AiOutlineDelete } from 'react-icons/ai'
 
-function List() {
-    return(
-        <div className='containerList'>
-            <div className='status'>
-                <input type={'checkbox'}/>
+function List({task}) {
+    return (  
+            <div className='container_row'>
+                <div className='status'>
+                    <input type={'checkbox'} />
+                </div>
+                <div className='tarefas'>
+                    <p>{task}</p>
+                    <AiOutlineDelete  className='icon'/>
+                </div>
             </div>
-            <div className='tarefas'>
-                <p>Limpar a casa</p>
-            </div>
-        </div>
+
     )
 }
 

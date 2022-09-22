@@ -7,6 +7,7 @@ import { useState} from 'react'
 function FormEconomia({addEconomias}) {
 
     const [economia, setEconomia] = useState([])
+    const [saldoTotal, setSaldoTotal] = useState(0)
     
 
     const pegarValue = (e) => {
@@ -15,6 +16,8 @@ function FormEconomia({addEconomias}) {
 
     const mandarEconomia = (e) => {
         e.preventDefault()
+        setSaldoTotal(Number(saldoTotal + Number(economia.saldo)))
+        setEconomia({... economia, saldoTot: saldoTotal})
         addEconomias(economia)
     }
 

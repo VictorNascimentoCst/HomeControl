@@ -1,6 +1,16 @@
 .container_todolist {
-    background-color: rgba(165, 42, 42, 0.395);
+    background-color:#8ecae6;
     padding: 10px;
     border-radius: 15px;
     margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_todolist h2 {
+    margin-bottom: 25%;
+}
+.input_todolist {
+    display: flex;
+    max-height: 15%;
 }

@@ -1,8 +1,23 @@
 .containerList {
-    background-color: rgba(255, 0, 0, 0.329);
+    background-color: #8ecae6;
     width: 100%;
     border-radius: 15px;
+    padding: 10px;
+    max-height: 250px;
+    overflow-x: auto;
+}
+.container_row {
+    padding: 0px 10px;
     display: flex;
     align-items: baseline;
+    background-color: bisque;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-bottom: 5px;
 
+}
+.tarefas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
