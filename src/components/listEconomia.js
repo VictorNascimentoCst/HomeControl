@@ -1,9 +1,8 @@
 import RowEconomia from '../components/rowEconomia'
+import Economias from '../pages/economias'
 import './listEconomia.css'
-import { useEffect } from 'react'
 
-function ListEconomia({ texto1, texto2, texto3, economias, saldoTotal }) {
-
+function ListEconomia({ texto1, texto2, texto3, economias }) {
 
     return (
 
@@ -16,10 +15,13 @@ function ListEconomia({ texto1, texto2, texto3, economias, saldoTotal }) {
 
 
             {Array.from(economias).map((e, index) => {
-                return <RowEconomia key={index} saldoTotal={e.saldoTot} 
+    
+                        return <RowEconomia key={index} saldoTotal={e.saldoTot} 
 
 
-                    mes={e.mes} saldo={e.saldo} />
+                        mes={e.mes} saldo={e.saldo} economias={economias} />
+                    
+           
             })}
         </div>
 

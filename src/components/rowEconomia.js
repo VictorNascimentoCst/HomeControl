@@ -1,6 +1,10 @@
+
 import './rowEconomia.css'
 
-function RowEconomia({mes, saldo, saldoTotal=0}) {
+
+function RowEconomia({mes, saldo, saldoTotal, economias}) {
+
+
 
     return (
         <div>

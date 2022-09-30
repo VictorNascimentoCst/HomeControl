@@ -7,7 +7,7 @@ import Total from './total';
 
 
 function BoxesGastos({gastos, valor}) {
-    
+
     return (
         <div className='Maincontainer_boxes'>
 
