@@ -1,5 +1,4 @@
-import RowEconomia from '../components/rowEconomia'
-import Economias from '../pages/economias'
+import RowEconomia from './rowEconomia'
 import './listEconomia.css'
 
 function ListEconomia({ texto1, texto2, texto3, economias }) {
@@ -12,16 +11,10 @@ function ListEconomia({ texto1, texto2, texto3, economias }) {
                 <h3>{texto2}</h3>
                 <h3>{texto3}</h3>
             </div>
-
-
+            
             {Array.from(economias).map((e, index) => {
-    
                         return <RowEconomia key={index} saldoTotal={e.saldoTot} 
-
-
-                        mes={e.mes} saldo={e.saldo} economias={economias} />
-                    
-           
+                        mes={e.mes} saldo={e.saldo} economias={economias} /> 
             })}
         </div>
 

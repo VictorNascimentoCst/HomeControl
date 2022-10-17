@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import "./form.css"
-import Button from "./button";
-import Input from "./input";
+import Button from "../button";
+import Input from "../input";
 
 
 function Form({addGastos}) {

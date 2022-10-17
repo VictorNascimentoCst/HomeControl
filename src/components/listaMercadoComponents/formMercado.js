@@ -1,7 +1,7 @@
 import { useState } from "react"
-import Button from "./button"
+import Button from "../button"
 import "./formMercado.css"
-import Input from './input'
+import Input from '../input'
 
 
 function FormMercado({addListaMercado}) {

@@ -42,10 +42,3 @@
     color: #023047;
 }
 
-.container_list{
-    max-height: 15em;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    box-shadow: 10px 10px 10px #86868671;
-}

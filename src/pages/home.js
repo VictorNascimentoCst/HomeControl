@@ -1,7 +1,7 @@
 import style from '../pages/home.module.css'
-import About from '../components/about';
-import ToDoList from '../components/to-do-list';
-import List from '../components/list';
+import About from '../components/homeComponents/about';
+import ToDoList from '../components/homeComponents/to-do-list';
+import List from '../components/homeComponents/list';
 import { useState } from "react"
 
 

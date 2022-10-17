@@ -1,6 +1,6 @@
 import './to-do-list.css'
-import Input from '../components/input'
-import Button from '../components/button'
+import Input from '../input'
+import Button from '../button'
 import { GrAdd } from 'react-icons/gr'
 import { useState } from "react"
 
@@ -21,7 +21,6 @@ function ToDoList({addList}) {
         addList(task)
     }
 
-    //criar a funcao do submit do form e enviar dados para  list crias as tarefas
     return (
         <form onSubmit={addTask} className='container_todolist'>
             <h2>Todo List</h2>

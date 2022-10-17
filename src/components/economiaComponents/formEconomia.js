@@ -1,6 +1,6 @@
-import Button from './button'
+import Button from '../button'
 import './formEconomia.css'
-import Input from './input'
+import Input from '../input'
 import InputSelect from './inputSelect'
 import { useState } from 'react'
 
@@ -20,10 +20,6 @@ function FormEconomia({ addEconomias }) {
      
         addEconomias(economia)
     }
-
-
-
-
 
     return (
 

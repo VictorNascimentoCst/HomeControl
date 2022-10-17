@@ -1,7 +1,5 @@
 import './containerList.css'
-import Row from '../components/row'
-
-
+import Row from './row'
 
 function ContainerList({ texto1, texto2, texto3, ListaMercado }) {
 
@@ -15,6 +13,7 @@ function ContainerList({ texto1, texto2, texto3, ListaMercado }) {
                     <h3>{texto3}</h3>
                 </div>
                 {Array.from(ListaMercado).map((e) => {
+                    
                     return <Row produto={e.produto} quantidade={e.quantidade} />
                 })}
             </div>

@@ -1,7 +1,7 @@
-import FormEconomia from '../components/formEconomia';
-import ListEconomia from '../components/listEconomia';
+import FormEconomia from '../components/economiaComponents/formEconomia';
+import ListEconomia from '../components/economiaComponents/listEconomia';
 import style from '../pages/Economias.module.css'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 
 function Economias() {

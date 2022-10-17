@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import './row.css'
 
-function Row({ produto, quantidade}) {
 
+function Row({ produto, quantidade }) {
     const [status, setStatus] = useState(false)
     const [text, setText] = useState('Não comprado !')
 
     const comprado = (e) => {
         e.preventDefault();
-        if(status == false){
+        if (status == false) {
             e.target.setAttribute('class', 'status')
             setText('Comprado!')
             setStatus(true)
@@ -18,12 +18,14 @@ function Row({ produto, quantidade}) {
             setText(' Não comprado!')
             setStatus(false)
         }
-
     }
-  
+
+
 
     return (
+
         <div>
+            
                 <div className="row">
                     <p className='status_p' onClick={comprado}>{text}</p>
                     <p>{produto}</p>

@@ -7,10 +7,12 @@
     box-shadow: 10px 10px 10px #86868671;
     border-radius: 10px;
     margin-bottom: 10%;
+    overflow-y: auto;
 }
 .titles_economia {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-bottom: 2px dotted black;
     text-align: center;
+    padding-right: 20px;
 }

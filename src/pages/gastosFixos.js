@@ -1,7 +1,9 @@
 import { useState} from 'react';
-import Form from '../components/form';
+import Form from '../components/gastosFixosComponents/form';
 import style from '../pages/gastosFixos.module.css'
-import BoxesGastos from '../components/boxesGastos';
+
+
+import BoxesGastos from '../components/gastosFixosComponents/boxesGastos';
 
 
 function GastosFixos() {

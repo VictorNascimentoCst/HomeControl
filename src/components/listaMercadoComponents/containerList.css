@@ -2,11 +2,13 @@
 .container_list {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     background-color: #8ecae6;
     min-width: 40%;
     box-shadow: 10px 10px 10px #86868671;
     border-radius: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
+    overflow:auto;
 }
 .titles {
     display: grid;

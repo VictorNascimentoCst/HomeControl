@@ -1,8 +1,8 @@
-import FormMercado from '../components/formMercado';
+import FormMercado from '../components/listaMercadoComponents/formMercado';
 import { useState } from 'react';
 import style from '../pages/ListaMercado.module.css'
 import './ListaMercado.module.css'
-import ContainerList from '../components/containerList'
+import ContainerList from '../components/listaMercadoComponents/containerList'
 
 
 function ListaMercado() {
